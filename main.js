@@ -29,5 +29,7 @@ function convertToPhonetic(array){
     return phonetic.join()
 };
 
-console.log(convertToPhonetic([3, 25, 209]));
-console.log(convertToPhonetic( [10, 300, 5]));
+const args = process.argv.slice(2)
+
+console.log(convertToPhonetic(args));
+console.log(convertToPhonetic( [3, 25, 209]));
