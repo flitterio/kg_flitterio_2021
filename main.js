@@ -15,21 +15,21 @@ function convertToPhonetic(array){
         for(let j = 0; j < numString.length; j++){
 
             //use current digit as the key, push the corresponding value to the tempNumber array
-            tempNumber.push(numKey[numString.charAt(j)])
+            tempNumber.push(numKey[numString.charAt(j)]);
         }
 
         //join the separate, converted digits together and push those to the final phonetic array
-        phonetic.push(tempNumber.join(""))
+        phonetic.push(tempNumber.join(""));
 
         //reset the tempnumber 
-        tempNumber = []
+        tempNumber = [];
     }
 
     //return the final array joined to match the expected format
-    return phonetic.join()
+    return phonetic.join();
 };
 
 
-const args = process.argv.slice(2)
+const args = process.argv.slice(2);
 
 console.log(convertToPhonetic(args));
